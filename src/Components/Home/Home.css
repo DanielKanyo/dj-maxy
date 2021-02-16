@@ -1,0 +1,52 @@
+.home {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-image: radial-gradient(
+        circle,
+        #1c1c1c,
+        #181818,
+        #151515,
+        #101010,
+        #0b0b0b
+    );
+    overflow: hidden;
+}
+
+.maxi-photo {
+    position: absolute;
+    bottom: 0;
+    left: calc(50% - 600px);
+    width: 600px;
+    height: 90%;
+    background-image: url("../../Static/Images/djmaxi.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    z-index: 5;
+}
+
+.title-container {
+    font-family: Alien;
+    position: absolute;
+    width: calc(100% - 170px);
+    left: 170px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 820px;
+    line-height: 280px;
+    letter-spacing: -230px;
+}
+
+.title-container div {
+    width: 650px;
+    background-image: url(https://media0.giphy.com/media/9VibnMiSxeumH41XdZ/giphy.gif?cid=ecf05e474ueun0nin5pi4l6s3mvhxqiycw4fzr4c98hmzd15&rid=giphy.gif);
+    /* background-image: url(https://media1.giphy.c-om/media/3o751RueEAmi1NchzO/giphy.gif?cid=ecf05e470z97u7gujiff48jrurqth0gb6ue9x72isw6l4lve&rid=giphy.gif); */
+    background-size: cover;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
