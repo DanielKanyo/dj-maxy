@@ -1,4 +1,4 @@
-.home {
+.header {
     width: 100%;
     height: 100vh;
     position: relative;
@@ -43,10 +43,44 @@
 
 .title-container div {
     width: 650px;
-    background-image: url(https://media0.giphy.com/media/9VibnMiSxeumH41XdZ/giphy.gif?cid=ecf05e474ueun0nin5pi4l6s3mvhxqiycw4fzr4c98hmzd15&rid=giphy.gif);
-    /* background-image: url(https://media1.giphy.c-om/media/3o751RueEAmi1NchzO/giphy.gif?cid=ecf05e470z97u7gujiff48jrurqth0gb6ue9x72isw6l4lve&rid=giphy.gif); */
+    background-image: url("../../Static/Images/loop.gif");
     background-size: cover;
-    color: transparent;
+    color: rgba(255, 255, 255, 0.15);
     -webkit-background-clip: text;
     background-clip: text;
+}
+
+.about {
+    background: #0c0c0c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 80px 0;
+}
+
+.about .text {
+    width: 1000px;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 30px;
+    text-align: center;
+    padding-bottom: 60px;
+}
+
+.social-container {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    height: 100vh;
+    justify-content: center;
+    left: 60px;
+}
+
+.language-selector-container {
+    position: absolute;
+    right: 60px;
+    bottom: 0;
+    height: 80px;
+    display: flex;
+    align-items: center;
 }

@@ -1,16 +1,22 @@
 .navigation {
     text-align: center;
     position: fixed;
-    width: calc(100% - 200px);
-    height: 100px;
+    width: calc(100% - 106px);
+    height: 80px;
     display: flex;
-    align-items: flex-end;
-    justify-content: center;
+    align-items: center;
     z-index: 10;
-    display: flex;
     justify-content: space-between;
-    padding: 0 100px;
-    color: #C15B64;
+    padding: 0 46px 0 60px;
+    color: #ff626f;
+    font-size: 14px;
+    backdrop-filter: blur(5px);
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.name-and-avatar-container {
+    display: flex;
+    align-items: center;
 }
 
 .routes {
@@ -19,11 +25,4 @@
 
 .routes a {
     text-decoration: none;
-    padding: 12px 30px;
-    text-transform: uppercase;
-    color: #e9727c;
-}
-
-.routes a:last-of-type {
-    padding-right: 0;
 }
