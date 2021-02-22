@@ -2,8 +2,11 @@ export const ROUTES = ['fooldal', 'rolam', 'rendezvenyek', 'galeria', 'technika'
 
 export const MY_BTN_STYLE = {
     padding: '12px 32px',
-    color: '#ff626f',
-    borderColor: '#ff626f'
+    backgroundColor: '#ff626f',
+    color: 'white',
+    '&:hover': {
+        backgroundColor: '#ff626f',
+    }
 };
 
 export const SOCIAL_BTN_STYLE = {

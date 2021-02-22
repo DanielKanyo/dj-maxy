@@ -77,7 +77,7 @@ const Home = ({ language, setLanguage }) => {
                         {TRANSLATIONS['about_me'][language]}
                     </div>
                     <div>
-                        <Button className={classes.btn} variant='outlined'>Tovább</Button>
+                        <Button className={classes.btn} variant='contained'>Tovább</Button>
                     </div>
                 </div>
                 <div className='maxy-img'></div>
