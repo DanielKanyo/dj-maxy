@@ -45,26 +45,53 @@
     width: 650px;
     background-image: url("../../Static/Images/loop.gif");
     background-size: cover;
-    color: rgba(255, 255, 255, 0.15);
     -webkit-background-clip: text;
+    color: rgba(255, 255, 255, 0.15);
     background-clip: text;
 }
 
 .about {
-    background: #0c0c0c;
+    background: #232323;
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
     padding: 80px 0;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.about-title {
+    font-size: 40px;
+    margin-bottom: 30px;
+    line-height: 40px;
+}
+
+.about .about-text-and-btn {
+    display: flex;
+    flex-direction: column;
+    margin-right: 110px;
 }
 
 .about .text {
     width: 1000px;
-    color: rgba(255, 255, 255, 0.5);
-    font-size: 30px;
-    text-align: center;
-    padding-bottom: 60px;
+    font-size: 20px;
+    margin-bottom: 30px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    max-width: 600px;
+    line-height: 40px;
+    font-style: italic;
+}
+
+.about .maxy-img {
+    background-image: url("../../Static/Images/maxy_garden.jpg");
+    height: 350px;
+    width: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0px 0px 25px 0px rgba(20, 20, 20, 1);
 }
 
 .social-container {

@@ -5,7 +5,7 @@ import Avatar from '@material-ui/core/Avatar';
 
 import './Navigation.css';
 
-import { ROUTES, NAVIGATION_KEY } from '../../Static/Constants/constants';
+import { ROUTES } from '../../Static/Constants/constants';
 import { TRANSLATIONS } from '../../Static/Translations/translations';
 import avatarImg from '../../Static/Images/avatar.jpg'
 
@@ -41,7 +41,7 @@ const Navigation = ({ language }) => {
                         return (
                             <Link key={i} to='/'>
                                 <Button className={classes.navBtn}>
-                                    {TRANSLATIONS[NAVIGATION_KEY][language][route]}
+                                    {TRANSLATIONS['navigation'][language][route]}
                                 </Button>
                             </Link>
                         )

@@ -6,32 +6,19 @@ import TwitterIcon from '@material-ui/icons/Twitter';
 
 import './Home.css';
 
-import { MY_BTN, ABOUT_ME_KEY, SOCIALS, AVAILABLE_LANGUAGES } from '../../Static/Constants/constants';
+import {
+    MY_BTN_STYLE,
+    SOCIALS,
+    AVAILABLE_LANGUAGES,
+    SOCIAL_BTN_STYLE,
+    LANGUAGE_BTN_STYLE
+} from '../../Static/Constants/constants';
 import { TRANSLATIONS } from '../../Static/Translations/translations';
 
 const useStyles = makeStyles(() => ({
-    btn: MY_BTN,
-    socialBtn: {
-        borderRadius: '50%',
-        marginTop: 8,
-        marginBottom: 8,
-        padding: 0,
-        height: 60,
-        width: 60,
-        color: 'rgba(255, 255, 255, 0.35)',
-        border: '1px solid rgba(255, 255, 255, 0.35)',
-        transition: 'none',
-        '&:hover': {
-            color: '#ff626f',
-            borderColor: '#ff626f',
-        }
-    },
-    langBtn: {
-        color: 'rgba(255, 255, 255, 0.35)',
-        '&[active=true]': {
-            color: '#ff626f'
-        }
-    }
+    btn: MY_BTN_STYLE,
+    socialBtn: SOCIAL_BTN_STYLE,
+    langBtn: LANGUAGE_BTN_STYLE
 }));
 
 const Home = ({ language, setLanguage }) => {
@@ -40,11 +27,11 @@ const Home = ({ language, setLanguage }) => {
     const getIconElement = social => {
         switch (social) {
             case 'facebook':
-                return <FacebookIcon className='social-icon' />
+                return <FacebookIcon className='social-icon' />;
             case 'youtube':
-                return <YouTubeIcon className='social-icon' />
+                return <YouTubeIcon className='social-icon' />;
             case 'twitter':
-                return <TwitterIcon className='social-icon' />
+                return <TwitterIcon className='social-icon' />;
             default:
                 console.warn('Unsupported social icon...');
                 break;
@@ -84,10 +71,16 @@ const Home = ({ language, setLanguage }) => {
                 </div>
             </div>
             <div className='about'>
-                <div className='text'>
-                    {TRANSLATIONS[ABOUT_ME_KEY][language]}
+                <div className='about-text-and-btn'>
+                    <div className='about-title'>{TRANSLATIONS['navigation'][language]['rolam']}</div>
+                    <div className='text'>
+                        {TRANSLATIONS['about_me'][language]}
+                    </div>
+                    <div>
+                        <Button className={classes.btn} variant='outlined'>Tovább</Button>
+                    </div>
                 </div>
-                <Button className={classes.btn} variant='outlined'>Mégtöbb rólam</Button>
+                <div className='maxy-img'></div>
             </div>
         </div>
     )

@@ -1,13 +1,33 @@
 export const ROUTES = ['fooldal', 'rolam', 'rendezvenyek', 'galeria', 'technika', 'kapcsolat'];
 
-export const MY_BTN = {
-    padding: '20px 40px',
+export const MY_BTN_STYLE = {
+    padding: '12px 32px',
     color: '#ff626f',
     borderColor: '#ff626f'
 };
 
-export const NAVIGATION_KEY = 'navigation';
-export const ABOUT_ME_KEY = 'about_me';
+export const SOCIAL_BTN_STYLE = {
+    borderRadius: '50%',
+    marginTop: 8,
+    marginBottom: 8,
+    padding: 0,
+    height: 60,
+    width: 60,
+    color: 'rgba(255, 255, 255, 0.35)',
+    border: '1px solid rgba(255, 255, 255, 0.35)',
+    transition: 'none',
+    '&:hover': {
+        color: '#ff626f',
+        borderColor: '#ff626f',
+    }
+};
+
+export const LANGUAGE_BTN_STYLE = {
+    color: 'rgba(255, 255, 255, 0.35)',
+    '&[active=true]': {
+        color: '#ff626f'
+    }
+};
 
 export const SOCIALS = ['facebook', 'youtube', 'twitter'];
 
