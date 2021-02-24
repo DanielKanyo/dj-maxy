@@ -17,6 +17,13 @@
 .name-and-avatar-container {
     display: flex;
     align-items: center;
+    font-family: Alien;
+    font-size: 32px;
+    letter-spacing: -5px;
+}
+
+.name-and-avatar-container span:first-of-type {
+    color: rgba(255, 255, 255, 0.75);
 }
 
 .routes {

@@ -15,8 +15,11 @@ export const App = () => {
                 <Navigation language={language} />
                 <div className='content' >
                     <Switch>
-                        <Route path="/">
+                        <Route exact path="/">
                             <Home language={language} setLanguage={setLanguage} />
+                        </Route>
+                        <Route path="/about">
+                            about
                         </Route>
                     </Switch>
                 </div>

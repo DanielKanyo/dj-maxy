@@ -31,5 +31,13 @@ export const TRANSLATIONS = {
             osećaju dobro na mojim nastupima, ali pored atmosfere bitni su i kvalitetan zvuk i vizuelni elementi.
             Koristim profesionalnu tehnologiju zvuka i svetla na događajima koje neprestano razvijam. Važno mi
             je da se svi sjećaju mojih nastupa s dobrim osjećajem!`
+    },
+    events: {
+        hun: `Esküvők, céges bulik, osztálytalálkozók, születésnapok, retró party-k (70-es, 80-as,
+            90-es 2000-es évek slágerei, magyar és EX-YU slágerek, electro swing valamint a legújabb modern
+            slágerek)!`,
+        srb: `Venčanja, slavlja, veselja, maturske večeri, modne revije, rođendani, studenske žurke,
+            retro žurke (od hitova 70-ih, 80-ih, 90-ih 2000-ih, EX-YU hitovi, do elektro swing-a i najnovije
+            modernih hitova)!`
     }
 }

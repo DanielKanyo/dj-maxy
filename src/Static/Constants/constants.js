@@ -1,4 +1,29 @@
-export const ROUTES = ['fooldal', 'rolam', 'rendezvenyek', 'galeria', 'technika', 'kapcsolat'];
+export const ROUTES = [
+    {
+        name: 'fooldal',
+        path: '/'
+    },
+    {
+        name: 'rolam',
+        path: '/about'
+    },
+    {
+        name: 'rendezvenyek',
+        path: '/events'
+    },
+    {
+        name: 'galeria',
+        path: '/gallery'
+    },
+    {
+        name: 'technika',
+        path: '/technics'
+    },
+    {
+        name: 'kapcsolat',
+        path: '/contact'
+    },
+];
 
 export const MY_BTN_STYLE = {
     padding: '12px 32px',
