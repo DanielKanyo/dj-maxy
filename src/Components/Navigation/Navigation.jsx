@@ -1,12 +1,10 @@
-import { Link } from 'react-router-dom';
 import { makeStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
 import Avatar from '@material-ui/core/Avatar';
-import { useLocation } from 'react-router-dom';
 
 import './Navigation.css';
 
-import { ROUTES } from '../../Static/Constants/constants';
+import { SECTIONS } from '../../Static/Constants/constants';
 import { TRANSLATIONS } from '../../Static/Translations/translations';
 import avatarImg from '../../Static/Images/avatar.jpg'
 
@@ -19,10 +17,6 @@ const useStyles = makeStyles((theme) => ({
         border: '1px solid transparent',
         '&:hover': {
             color: '#ff626f'
-        },
-        '&[active=true]': {
-            color: '#ff626f',
-            border: '1px solid #ff626f',
         }
     },
     large: {
@@ -33,7 +27,6 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const Navigation = ({ language }) => {
-    const location = useLocation();
     const classes = useStyles();
 
     return (
@@ -44,16 +37,11 @@ const Navigation = ({ language }) => {
             </div>
             <div className='routes'>
                 {
-                    ROUTES.map((route, i) => {
+                    SECTIONS.map(section => {
                         return (
-                            <Link key={i} to={route.path}>
-                                <Button
-                                    className={classes.navBtn}
-                                    active={(route.path === location.pathname).toString()}
-                                >
-                                    {TRANSLATIONS['navigation'][language][route.name]}
-                                </Button>
-                            </Link>
+                            <Button key={section} className={classes.navBtn}>
+                                {TRANSLATIONS['navigation'][language][section]}
+                            </Button>
                         )
                     })
                 }

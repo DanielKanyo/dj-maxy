@@ -1,30 +1,27 @@
 import { useState } from 'react';
 
-import './App.css';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-
 import Navigation from '../Navigation/Navigation';
-import Home from '../Home/Home';
+import About from '../About/About';
+import Header from '../Header/Header';
+import Events from '../Events/Events';
+import Gallery from '../Gallery/Gallery';
+
+import './App.css';
 
 export const App = () => {
     const [language, setLanguage] = useState('hun');
 
     return (
-        <Router>
-            <div>
-                <Navigation language={language} />
-                <div className='content' >
-                    <Switch>
-                        <Route exact path="/">
-                            <Home language={language} setLanguage={setLanguage} />
-                        </Route>
-                        <Route path="/about">
-                            about
-                        </Route>
-                    </Switch>
-                </div>
+        <div>
+            <Navigation language={language} />
+
+            <div className='content' >
+                <Header language={language} setLanguage={setLanguage} />
+                <About language={language} />
+                <Events language={language} />
+                <Gallery language={language} />
             </div>
-        </Router>
+        </div>
     );
 }
 

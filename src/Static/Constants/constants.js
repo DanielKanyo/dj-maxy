@@ -1,38 +1,4 @@
-export const ROUTES = [
-    {
-        name: 'fooldal',
-        path: '/'
-    },
-    {
-        name: 'rolam',
-        path: '/about'
-    },
-    {
-        name: 'rendezvenyek',
-        path: '/events'
-    },
-    {
-        name: 'galeria',
-        path: '/gallery'
-    },
-    {
-        name: 'technika',
-        path: '/technics'
-    },
-    {
-        name: 'kapcsolat',
-        path: '/contact'
-    },
-];
-
-export const MY_BTN_STYLE = {
-    padding: '12px 32px',
-    backgroundColor: '#ff626f',
-    color: 'white',
-    '&:hover': {
-        backgroundColor: '#ff626f',
-    }
-};
+export const SECTIONS = ['fooldal', 'rolam', 'rendezvenyek', 'galeria', 'technika', 'kapcsolat'];
 
 export const SOCIAL_BTN_STYLE = {
     borderRadius: '50%',
