@@ -26,10 +26,10 @@
     color: rgba(255, 255, 255, 0.75);
 }
 
-.routes {
+.sections {
     display: flex;
 }
 
-.routes a {
+.sections a {
     text-decoration: none;
 }

@@ -5,6 +5,9 @@ import About from '../About/About';
 import Header from '../Header/Header';
 import Events from '../Events/Events';
 import Gallery from '../Gallery/Gallery';
+import Contact from '../Contact/Contact';
+import Tech from '../Tech/Tech';
+import Footer from '../Footer/Footer';
 
 import './App.css';
 
@@ -20,6 +23,9 @@ const App = () => {
                 <About language={language} />
                 <Events language={language} />
                 <Gallery language={language} />
+                <Tech language={language} />
+                <Contact language={language} />
+                <Footer language={language} />
             </div>
         </div>
     );

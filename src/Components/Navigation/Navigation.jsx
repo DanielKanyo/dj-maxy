@@ -40,7 +40,7 @@ const Navigation = ({ language }) => {
                 <Avatar alt='Maxy' src={avatarImg} className={classes.large} />
                 <span>DJ</span><span>MAXY</span>
             </div>
-            <div className='routes'>
+            <div className='sections'>
                 {
                     SECTIONS.map(section => {
                         return (
