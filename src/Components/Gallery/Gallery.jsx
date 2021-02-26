@@ -1,6 +1,6 @@
 const Gallery = ({ language }) => {
     return (
-        <div>
+        <div className='gallery'>
             Gallery
         </div>
     )

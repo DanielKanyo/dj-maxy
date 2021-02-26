@@ -1,10 +1,11 @@
 import { makeStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
 import Avatar from '@material-ui/core/Avatar';
+import { ScrollTo } from 'react-scroll-to';
 
 import './Navigation.css';
 
-import { SECTIONS } from '../../Static/Constants/constants';
+import { SECTIONS, SCROLL_PADDING } from '../../Static/Constants/constants';
 import { TRANSLATIONS } from '../../Static/Translations/translations';
 import avatarImg from '../../Static/Images/avatar.jpg'
 
@@ -29,6 +30,10 @@ const useStyles = makeStyles((theme) => ({
 const Navigation = ({ language }) => {
     const classes = useStyles();
 
+    const getTopPositionBySelector = (selector) => {
+        return document.querySelector(`.${selector}`).offsetTop - SCROLL_PADDING;
+    }
+
     return (
         <div className='navigation'>
             <div className='name-and-avatar-container'>
@@ -39,9 +44,19 @@ const Navigation = ({ language }) => {
                 {
                     SECTIONS.map(section => {
                         return (
-                            <Button key={section} className={classes.navBtn}>
-                                {TRANSLATIONS['navigation'][language][section]}
-                            </Button>
+                            <ScrollTo key={section.selector}>
+                                {({ scroll }) => (
+                                    <Button
+                                        className={classes.navBtn}
+                                        onClick={() => scroll({
+                                            y: getTopPositionBySelector(section.selector),
+                                            smooth: true
+                                        })}
+                                    >
+                                        {TRANSLATIONS['navigation'][language][section.name]}
+                                    </Button>
+                                )}
+                            </ScrollTo>
                         )
                     })
                 }

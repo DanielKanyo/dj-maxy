@@ -8,14 +8,14 @@ import Gallery from '../Gallery/Gallery';
 
 import './App.css';
 
-export const App = () => {
+const App = () => {
     const [language, setLanguage] = useState('hun');
 
     return (
         <div>
             <Navigation language={language} />
 
-            <div className='content' >
+            <div className='app'>
                 <Header language={language} setLanguage={setLanguage} />
                 <About language={language} />
                 <Events language={language} />

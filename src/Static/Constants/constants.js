@@ -1,4 +1,29 @@
-export const SECTIONS = ['fooldal', 'rolam', 'rendezvenyek', 'galeria', 'technika', 'kapcsolat'];
+export const SECTIONS = [
+    {
+        name: 'fooldal',
+        selector: 'app'
+    },
+    {
+        name: 'rolam',
+        selector: 'about'
+    },
+    {
+        name: 'rendezvenyek',
+        selector: 'events'
+    },
+    {
+        name: 'galeria',
+        selector: 'gallery'
+    },
+    {
+        name: 'technika',
+        selector: 'tech'
+    },
+    {
+        name: 'kapcsolat',
+        selector: 'contact'
+    }
+];
 
 export const SOCIAL_BTN_STYLE = {
     borderRadius: '50%',
@@ -27,3 +52,5 @@ export const LANGUAGE_BTN_STYLE = {
 export const SOCIALS = ['facebook', 'youtube', 'twitter'];
 
 export const AVAILABLE_LANGUAGES = ['srb', 'hun'];
+
+export const SCROLL_PADDING = 50;
