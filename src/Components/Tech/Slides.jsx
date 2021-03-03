@@ -8,9 +8,7 @@ const Slides = () => {
                     <div className='img-container'>
                         <img src={data.src} alt='' />
                     </div>
-                    <div className='text-container'>
-                        {data.txt}
-                    </div>
+                    <div className='text-container'>{data.txt}</div>
                 </div>
             )
         })

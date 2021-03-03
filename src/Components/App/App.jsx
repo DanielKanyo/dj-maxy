@@ -22,8 +22,8 @@ const App = () => {
                 <Header language={language} setLanguage={setLanguage} />
                 <About language={language} />
                 <Events language={language} />
-                <Gallery language={language} />
                 <Tech language={language} />
+                <Gallery language={language} />
                 <Contact language={language} />
                 <Footer language={language} />
             </div>

@@ -22,12 +22,12 @@ export const SECTIONS = [
         selector: 'events'
     },
     {
-        name: 'galeria',
-        selector: 'gallery'
-    },
-    {
         name: 'technika',
         selector: 'tech'
+    },
+    {
+        name: 'galeria',
+        selector: 'gallery'
     },
     {
         name: 'kapcsolat',
