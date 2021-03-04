@@ -103,3 +103,22 @@ export const CAROUSEL_DATA = [
         txt: 'INVISION COMPACT FOG 1500'
     }
 ];
+
+export const CHIP_STYLE = {
+    zIndex: 2,
+    padding: 12,
+    height: 50,
+    borderColor: 'rgba(255, 255, 255, 0.75)',
+    color: 'rgba(255, 255, 255, 0.75)',
+    borderRadius: 25,
+    '& span': {
+        fontSize: 16,
+        paddingRight: 25
+    },
+    '& svg': {
+        color: 'rgba(255, 255, 255, 0.75)',
+        '&:hover': {
+            color: 'rgba(255, 255, 255, 1)',
+        }
+    }
+}

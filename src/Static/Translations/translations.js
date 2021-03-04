@@ -39,5 +39,10 @@ export const TRANSLATIONS = {
         srb: `Venčanja, slavlja, veselja, maturske večeri, modne revije, rođendani, studenske žurke,
             retro žurke (od hitova 70-ih, 80-ih, 90-ih 2000-ih, EX-YU hitovi, do elektro swing-a i najnovije
             modernih hitova)!`
+    },
+    contact: {
+        hun: `Ajánlatkérését leadhatja email-ben illetve keresse facebook-os oldalamat, amit a lap alján található
+            ikonra kattintva érhet el.`,
+        srb: `Svoj zahtev za ponudu možete predati e-poštom ili potražiti moju Facebook stranicu, kojoj možete pristupiti klikom na ikonu na dnu stranice.`
     }
 }

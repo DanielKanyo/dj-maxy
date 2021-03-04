@@ -216,4 +216,45 @@
     padding: 15px 0;
     text-transform: uppercase;
     font-size: 18px;
+    font-weight: 300;
+}
+
+.contact {
+    padding: 80px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    background-color: #212121;
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.contact .title {
+    font-size: 40px;
+    margin-bottom: 30px;
+    line-height: 40px;
+    z-index: 2;
+}
+
+.contact .contact-text {
+    font-size: 20px;
+    margin-bottom: 30px;
+    line-height: 40px;
+    max-width: 800px;
+    font-style: italic;
+    z-index: 2;
+}
+
+.contact .party-img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../../Static/Images/party2.jpg");
+    opacity: 0.1;
+    background-attachment: fixed;
+    background-position: bottom;
 }
