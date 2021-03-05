@@ -1,3 +1,6 @@
+import React from 'react';
+import PropTypes from 'prop-types';
+
 import { TRANSLATIONS } from '../../Static/Translations/translations';
 
 const Events = ({ language }) => {
@@ -12,6 +15,10 @@ const Events = ({ language }) => {
             </div>
         </div>
     )
+}
+
+Events.propTypes = {
+    language: PropTypes.string.isRequired
 }
 
 export default Events;

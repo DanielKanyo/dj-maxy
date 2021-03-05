@@ -1,3 +1,6 @@
+import React from 'react';
+import PropTypes from 'prop-types';
+
 import { TRANSLATIONS } from '../../Static/Translations/translations';
 
 const About = ({ language }) => {
@@ -12,6 +15,10 @@ const About = ({ language }) => {
             <div className='maxy-img'></div>
         </div>
     )
+}
+
+About.propTypes = {
+    language: PropTypes.string.isRequired
 }
 
 export default About;

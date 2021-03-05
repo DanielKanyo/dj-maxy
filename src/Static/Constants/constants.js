@@ -112,13 +112,18 @@ export const CHIP_STYLE = {
     color: 'rgba(255, 255, 255, 0.75)',
     borderRadius: 25,
     '& span': {
-        fontSize: 16,
-        paddingRight: 25
-    },
-    '& svg': {
-        color: 'rgba(255, 255, 255, 0.75)',
-        '&:hover': {
-            color: 'rgba(255, 255, 255, 1)',
-        }
+        fontSize: 16
+    }
+}
+
+export const COPY_BTN_STYLE = {
+    height: 50,
+    width: 50,
+    border: '1px solid rgba(255, 255, 255, 0.75)',
+    marginLeft: 15,
+    color: 'rgba(255, 255, 255, 0.75)',
+    '&:hover': {
+        color: 'rgba(255, 255, 255, 1)',
+        border: '1px solid rgba(255, 255, 255, 1)',
     }
 }
