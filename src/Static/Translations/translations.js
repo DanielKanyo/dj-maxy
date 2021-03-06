@@ -3,7 +3,7 @@ export const TRANSLATIONS = {
         hun: {
             fooldal: 'Főoldal',
             rolam: 'Rólam',
-            rendezvenyek: 'Rendezvények',
+            rendezvenyek: 'Rendezvények - Szolgáltatások',
             galeria: 'Galéria',
             technika: 'Technika',
             kapcsolat: 'Kapcsolat'

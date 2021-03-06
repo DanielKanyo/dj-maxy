@@ -19,13 +19,15 @@ const App = () => {
             <Navigation language={language} />
 
             <div className='app'>
-                <Header language={language} setLanguage={setLanguage} />
-                <About language={language} />
-                <Events language={language} />
-                <Tech language={language} />
-                <Gallery language={language} />
-                <Contact language={language} />
-                <Footer language={language} />
+                <div className='wrapper'>
+                    <Header language={language} setLanguage={setLanguage} />
+                    <About language={language} />
+                    <Events language={language} />
+                    <Tech language={language} />
+                    <Gallery language={language} />
+                    <Contact language={language} />
+                </div>
+                <Footer />
             </div>
         </div>
     );
