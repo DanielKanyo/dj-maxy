@@ -3,8 +3,7 @@ import PropTypes from 'prop-types';
 import { makeStyles } from '@material-ui/core/styles';
 import { Button } from '@material-ui/core';
 import FacebookIcon from '@material-ui/icons/Facebook';
-import YouTubeIcon from '@material-ui/icons/YouTube';
-import TwitterIcon from '@material-ui/icons/Twitter';
+import InstagramIcon from '@material-ui/icons/Instagram';
 
 import {
     SOCIALS,
@@ -25,10 +24,8 @@ const Header = ({ language, setLanguage }) => {
         switch (social) {
             case 'facebook':
                 return <FacebookIcon className='social-icon' />;
-            case 'youtube':
-                return <YouTubeIcon className='social-icon' />;
-            case 'twitter':
-                return <TwitterIcon className='social-icon' />;
+            case 'instagram':
+                return <InstagramIcon className='social-icon' />;
             default:
                 console.warn('Unsupported social icon...');
                 break;
@@ -45,9 +42,11 @@ const Header = ({ language, setLanguage }) => {
                 {
                     SOCIALS.map(socail => {
                         return (
-                            <Button key={socail} className={classes.socialBtn}>
-                                {getIconElement(socail)}
-                            </Button>
+                            <a href={socail.link} key={socail.text} target='_blank' rel='noreferrer'>
+                                <Button className={classes.socialBtn}>
+                                    {getIconElement(socail.text)}
+                                </Button>
+                            </a>
                         )
                     })
                 }

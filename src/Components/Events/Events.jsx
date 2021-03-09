@@ -10,7 +10,15 @@ const Events = ({ language }) => {
             <div className='text'>
                 <div className='title'>{TRANSLATIONS['navigation'][language]['rendezvenyek']}</div>
                 <div className='description'>
-                    {TRANSLATIONS['events'][language]}
+                    <div className='section'>
+                        {TRANSLATIONS['events'][language]['section1']}
+                    </div>
+                    <div className='section'>
+                        {TRANSLATIONS['events'][language]['section2']}
+                    </div>
+                    <div className='section'>
+                        {TRANSLATIONS['events'][language]['section3']}
+                    </div>
                 </div>
             </div>
         </div>

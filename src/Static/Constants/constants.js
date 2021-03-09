@@ -10,10 +10,6 @@ import img9 from '../Images/INVISION-COMPACT-FOG-1500-FOG-Machine.png';
 
 export const SECTIONS = [
     {
-        name: 'fooldal',
-        selector: 'app'
-    },
-    {
         name: 'rolam',
         selector: 'about'
     },
@@ -59,7 +55,16 @@ export const LANGUAGE_BTN_STYLE = {
     }
 };
 
-export const SOCIALS = ['facebook', 'youtube', 'twitter'];
+export const SOCIALS = [
+    {
+        text: 'facebook',
+        link: 'https://www.facebook.com/Dj-Maxy-353060711440920'
+    },
+    {
+        text: 'instagram',
+        link: 'https://www.instagram.com/djmaxy/'
+    }
+];
 
 export const AVAILABLE_LANGUAGES = ['srb', 'hun'];
 

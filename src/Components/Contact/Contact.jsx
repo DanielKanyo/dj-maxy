@@ -18,6 +18,7 @@ const useStyles = makeStyles(() => ({
 const Contact = ({ language }) => {
     const classes = useStyles();
     const [email] = useState('maxy1972@gmail.com');
+    const [phoneNumber] = useState('+381 63 542432');
 
     return (
         <div className='contact'>
@@ -28,13 +29,25 @@ const Contact = ({ language }) => {
             <div className='contact-text'>
                 {TRANSLATIONS['contact'][language]}
             </div>
-            <div>
+            <div className='email-container'>
                 <Chip variant='outlined' className={classes.chip} label={email} />
                 <Tooltip title='Másolás a vágólapra' placement='right'>
                     <IconButton
                         aria-label='copy'
                         className={classes.copyBtn}
                         onClick={() => { navigator.clipboard.writeText(email) }}
+                    >
+                        <FileCopyIcon />
+                    </IconButton>
+                </Tooltip>
+            </div>
+            <div>
+                <Chip variant='outlined' className={classes.chip} label={phoneNumber} />
+                <Tooltip title='Másolás a vágólapra' placement='right'>
+                    <IconButton
+                        aria-label='copy'
+                        className={classes.copyBtn}
+                        onClick={() => { navigator.clipboard.writeText(phoneNumber) }}
                     >
                         <FileCopyIcon />
                     </IconButton>

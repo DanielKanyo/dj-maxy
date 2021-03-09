@@ -1,7 +1,6 @@
 export const TRANSLATIONS = {
     navigation: {
         hun: {
-            fooldal: 'Főoldal',
             rolam: 'Rólam',
             rendezvenyek: 'Rendezvények - Szolgáltatások',
             galeria: 'Galéria',
@@ -9,9 +8,8 @@ export const TRANSLATIONS = {
             kapcsolat: 'Kapcsolat'
         },
         srb: {
-            fooldal: 'Početna',
             rolam: 'O Meni',
-            rendezvenyek: 'Događaji',
+            rendezvenyek: 'Događaji - Usluge',
             galeria: 'Galerija',
             technika: 'Technika',
             kapcsolat: 'Kontakt'
@@ -33,12 +31,18 @@ export const TRANSLATIONS = {
             je da se svi sjećaju mojih nastupa s dobrim osjećajem!`
     },
     events: {
-        hun: `Esküvők, céges bulik, osztálytalálkozók, születésnapok, retró party-k (70-es, 80-as,
-            90-es 2000-es évek slágerei, magyar és EX-YU slágerek, electro swing valamint a legújabb modern
-            slágerek)!`,
-        srb: `Venčanja, slavlja, veselja, maturske večeri, modne revije, rođendani, studenske žurke,
-            retro žurke (od hitova 70-ih, 80-ih, 90-ih 2000-ih, EX-YU hitovi, do elektro swing-a i najnovije
-            modernih hitova)!`
+        hun: {
+            section1: 'Esküvők - Lehetőség van csak dj fellépésre illetve akár együttessel kombinálva.',
+            section2: `Céges bulik, osztálytalálkozók, születésnapok, retró party-k (70-es, 80-as, 90-es 2000-es évek slágerei,
+                magyar és EX-YU slágerek, electro swing valamint a legújabb modern slágerek)!`,
+            section3: 'Koncertek, előadások, bemutatók hangosítása (szükség szerint fények), fellépők szervezése.'
+        },
+        srb: {
+            section1: 'Venčanje - Može samo  DJ-nastup ili u kombinaciji sa bendom.',
+            section2: `Slavlja, veselja, maturske večeri, modne revije, rođendani, studenske žurke,
+                retro žurke (od hitova 70-ih, 80-ih, 90-ih 2000-ih, EX-YU hitovi, do elektro swing-a i najnovije modernih hitova)!`,
+            section3: 'Ozvučenje koncerata, predstava, prezentacija (po potrebi rasveta), organizovanje izvođača.'
+        }
     },
     contact: {
         hun: `Ajánlatkérését leadhatja email-ben illetve keresse facebook-os oldalamat, amit a lap alján található
