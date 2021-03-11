@@ -7,6 +7,7 @@ import img6 from '../Images/18-LED-3W-PAR.png';
 import img7 from '../Images/American-DJ-deck-stand.png';
 import img8 from '../Images/Mozgofejes-LED.png';
 import img9 from '../Images/INVISION-COMPACT-FOG-1500-FOG-Machine.png';
+import galleryImg1 from '../Images/maxy_aboutme.jpg';
 
 export const SECTIONS = [
     {
@@ -107,6 +108,39 @@ export const CAROUSEL_DATA = [
         src: img9,
         txt: 'INVISION COMPACT FOG 1500'
     }
+];
+
+export const GALLERY_IMAGES = [
+    {
+        src: galleryImg1,
+        title: 'Image',
+        cols: 1,
+    },
+    {
+        src: galleryImg1,
+        title: 'Image',
+        cols: 1,
+    },
+    {
+        src: galleryImg1,
+        title: 'Image',
+        cols: 1,
+    },
+    {
+        src: galleryImg1,
+        title: 'Image',
+        cols: 1,
+    },
+    {
+        src: galleryImg1,
+        title: 'Image',
+        cols: 1,
+    },
+    {
+        src: galleryImg1,
+        title: 'Image',
+        cols: 1,
+    },
 ];
 
 export const CHIP_STYLE = {

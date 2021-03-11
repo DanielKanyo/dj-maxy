@@ -298,3 +298,15 @@
 .footer-social {
     margin-left: 50px;
 }
+
+.gallery {
+    background-image: radial-gradient(
+        circle,
+        #1c1c1c,
+        #181818,
+        #151515,
+        #101010,
+        #0b0b0b
+    );
+    padding: 30px 0;
+}
