@@ -40,7 +40,14 @@ const Navigation = ({ language }) => {
         <div className='navigation'>
             <div className='name-and-avatar-container'>
                 <Avatar alt='Maxy' src={avatarImg} className={classes.large} />
-                <span>DJ</span><span>MAXY</span>
+                <div>
+                    <div className='name'>
+                        <span>DJ</span><span>MAXY</span>
+                    </div>
+                    <span className='service-name'>
+                        Maxymoom Party Service
+                    </span>
+                </div>
             </div>
             <div className='sections'>
                 {

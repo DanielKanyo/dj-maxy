@@ -7,7 +7,6 @@ import img6 from '../Images/18-LED-3W-PAR.png';
 import img7 from '../Images/American-DJ-deck-stand.png';
 import img8 from '../Images/Mozgofejes-LED.png';
 import img9 from '../Images/INVISION-COMPACT-FOG-1500-FOG-Machine.png';
-import galleryImg1 from '../Images/maxy_aboutme.jpg';
 
 export const SECTIONS = [
     {
@@ -112,32 +111,37 @@ export const CAROUSEL_DATA = [
 
 export const GALLERY_IMAGES = [
     {
-        src: galleryImg1,
+        src: 'https://firebasestorage.googleapis.com/v0/b/dj-maxy.appspot.com/o/Manyi%20Zolieknal%202.JPG?alt=media&token=713d031d-5431-4546-8dc3-2fe90aa77b55',
         title: 'Image',
         cols: 1,
     },
     {
-        src: galleryImg1,
+        src: 'https://firebasestorage.googleapis.com/v0/b/dj-maxy.appspot.com/o/2018%20-%20Palics%20N%C5%91i%20Strand%20-%20sz%C3%BClinap%20-%20Maxy.jpg?alt=media&token=be2f1398-c2f4-4b95-a055-f3009bfec27e',
+        title: 'Image',
+        cols: .5,
+    },
+    {
+        src: 'https://firebasestorage.googleapis.com/v0/b/dj-maxy.appspot.com/o/IMG_20190810_223938.jpg?alt=media&token=35ce4ad7-a129-4f1e-b48b-a7b1d2c9d478',
+        title: 'Image',
+        cols: .5,
+    },
+    {
+        src: 'https://firebasestorage.googleapis.com/v0/b/dj-maxy.appspot.com/o/Maxy%20Jail%20Club%202016.jpg?alt=media&token=66c51534-6862-4630-a843-3aae572eaa11',
         title: 'Image',
         cols: 1,
     },
     {
-        src: galleryImg1,
+        src: 'https://firebasestorage.googleapis.com/v0/b/dj-maxy.appspot.com/o/IMG_20181201_211504.jpg?alt=media&token=0f5be9ea-2d49-435e-b77b-616d8ebe45da',
         title: 'Image',
         cols: 1,
     },
     {
-        src: galleryImg1,
+        src: 'https://firebasestorage.googleapis.com/v0/b/dj-maxy.appspot.com/o/IMG_20190713_162105.jpg?alt=media&token=5043e7a6-e0f7-404c-9897-11e146617311',
         title: 'Image',
         cols: 1,
     },
     {
-        src: galleryImg1,
-        title: 'Image',
-        cols: 1,
-    },
-    {
-        src: galleryImg1,
+        src: 'https://firebasestorage.googleapis.com/v0/b/dj-maxy.appspot.com/o/Atlantis%20Garden%20-Maxy%20Party%202014.jpg?alt=media&token=67e7f1e6-542e-49ec-a77d-708f80a8014d',
         title: 'Image',
         cols: 1,
     },

@@ -49,7 +49,7 @@
 
 .title-container div {
     width: 650px;
-    background-image: url("../../Static/Images/loop.gif");
+    background-image: url("https://firebasestorage.googleapis.com/v0/b/dj-maxy.appspot.com/o/loop.gif?alt=media&token=913d6bfc-503a-4780-8e3e-c73d27e09915");
     background-size: cover;
     -webkit-background-clip: text;
     color: rgba(255, 255, 255, 0.15);
@@ -143,7 +143,7 @@
     top: 0;
     width: 100%;
     height: 100%;
-    background-image: url("../../Static/Images/party.jpg");
+    background-image: url("https://firebasestorage.googleapis.com/v0/b/dj-maxy.appspot.com/o/party.jpg?alt=media&token=468cc748-e60d-4e31-bb6e-249f6e6ef170");
     opacity: 0.1;
     background-attachment: fixed;
 }
@@ -270,7 +270,7 @@
     top: 0;
     width: 100%;
     height: 100%;
-    background-image: url("../../Static/Images/party2.jpg");
+    background-image: url("https://firebasestorage.googleapis.com/v0/b/dj-maxy.appspot.com/o/party2.jpg?alt=media&token=3afca1d9-80e6-4cc8-ad49-075e5f905c0d");
     opacity: 0.1;
     background-attachment: fixed;
     background-position: bottom;
@@ -308,5 +308,5 @@
         #101010,
         #0b0b0b
     );
-    padding: 30px 0;
+    padding: 80px 0;
 }
