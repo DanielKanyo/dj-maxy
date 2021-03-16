@@ -38,38 +38,48 @@ const Navigation = ({ language }) => {
 
     return (
         <div className='navigation'>
-            <div className='name-and-avatar-container'>
-                <Avatar alt='Maxy' src={avatarImg} className={classes.large} />
-                <div>
-                    <div className='name'>
-                        <span>DJ</span><span>MAXY</span>
-                    </div>
-                    <span className='service-name'>
-                        Maxymoom Party Service
-                    </span>
-                </div>
-            </div>
-            <div className='sections'>
-                {
-                    SECTIONS.map(section => {
-                        return (
-                            <ScrollTo key={section.selector}>
-                                {({ scroll }) => (
-                                    <Button
-                                        className={classes.navBtn}
-                                        onClick={() => scroll({
-                                            y: getTopPositionBySelector(section.selector),
-                                            smooth: true
-                                        })}
-                                    >
-                                        {TRANSLATIONS['navigation'][language][section.name]}
-                                    </Button>
-                                )}
-                            </ScrollTo>
-                        )
-                    })
-                }
-            </div>
+            {
+                <ScrollTo>
+                    {({ scroll }) => (
+                        <div>
+                            <div className='name-and-avatar-container'>
+                                <Avatar alt='Maxy' src={avatarImg} className={classes.large} />
+                                <div
+                                    onClick={() => scroll({
+                                        y: 0,
+                                        smooth: true
+                                    })}
+                                >
+                                    <div className='name'>
+                                        <span>DJ</span><span>MAXY</span>
+                                    </div>
+                                    <span className='service-name'>
+                                        Maxymoom Party Service
+                                    </span>
+                                </div>
+                            </div>
+                            <div className='sections'>
+                                {
+                                    SECTIONS.map(section => {
+                                        return (
+                                            <Button
+                                                key={section.selector}
+                                                className={classes.navBtn}
+                                                onClick={() => scroll({
+                                                    y: getTopPositionBySelector(section.selector),
+                                                    smooth: true
+                                                })}
+                                            >
+                                                {TRANSLATIONS['navigation'][language][section.name]}
+                                            </Button>
+                                        )
+                                    })
+                                }
+                            </div>
+                        </div>
+                    )}
+                </ScrollTo>
+            }
         </div>
     )
 }

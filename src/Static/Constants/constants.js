@@ -68,7 +68,7 @@ export const SOCIALS = [
 
 export const AVAILABLE_LANGUAGES = ['srb', 'hun'];
 
-export const SCROLL_PADDING = 50;
+export const SCROLL_PADDING = 80;
 
 export const CAROUSEL_DATA = [
     {
