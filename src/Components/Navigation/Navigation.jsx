@@ -83,6 +83,7 @@ const Navigation = ({ language, setLanguage }) => {
                             <ScrollTo key={section.selector}>
                                 {({ scroll }) => (
                                     <Button
+                                        key={section.selector}
                                         className={classes.navBtn}
                                         onClick={() => scroll({
                                             y: getTopPositionBySelector(section.selector),
