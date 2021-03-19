@@ -65,56 +65,52 @@ const Navigation = ({ language, setLanguage }) => {
 
     return (
         <div className='navigation'>
-            <div className='name-and-avatar-container'>
-                <Avatar alt='Maxy' src={avatarImg} className={classes.large} />
-                <div>
-                    <div className='name'>
-                        <span>DJ</span><span>MAXY</span>
-                    </div>
-                    <span className='service-name'>
-                        Maxymoom Party Service
-                    </span>
-                </div>
-            </div>
-            <div className='nav-buttons'>
-                {
-                    SECTIONS.map(section => {
-                        return (
-                            <ScrollTo key={section.selector}>
-                                {({ scroll }) => (
-                                    <Button
-                                        key={section.selector}
-                                        className={classes.navBtn}
-                                        onClick={() => scroll({
-                                            y: getTopPositionBySelector(section.selector),
-                                            smooth: true
-                                        })}
-                                    >
-                                        {TRANSLATIONS['navigation'][language][section.name]}
-                                    </Button>
-                                )}
-                            </ScrollTo>
-                        )
-                    })
-                }
-            </div>
-            <div className='menu-button-container'>
-                <IconButton aria-label='menu' className={classes.menuBtn} onClick={() => toggleDrawer(true)}>
-                    <MenuIcon />
-                </IconButton>
-            </div>
+            <ScrollTo>
+                {({ scroll }) => (
+                    <>
+                        <div className='name-and-avatar-container'>
+                            <Avatar alt='Maxy' src={avatarImg} className={classes.large} />
+                            <div>
+                                <div className='name'>
+                                    <span>DJ</span><span>MAXY</span>
+                                </div>
+                                <span className='service-name'>
+                                    Maxymoom Party Service
+                                </span>
+                            </div>
+                        </div>
+                        <div className='nav-buttons'>
+                            {
+                                SECTIONS.map(section => {
+                                    return (
+                                        <Button
+                                            key={section.selector}
+                                            className={classes.navBtn}
+                                            onClick={() => scroll({
+                                                y: getTopPositionBySelector(section.selector),
+                                                smooth: true
+                                            })}
+                                        >
+                                            {TRANSLATIONS['navigation'][language][section.name]}
+                                        </Button>
+                                    )
+                                })
+                            }
+                        </div>
+                        <div className='menu-button-container'>
+                            <IconButton aria-label='menu' className={classes.menuBtn} onClick={() => toggleDrawer(true)}>
+                                <MenuIcon />
+                            </IconButton>
+                        </div>
 
-            <SwipeableDrawer
-                classes={{ paper: classes.paper }}
-                anchor='left'
-                open={drawer}
-                onClose={() => toggleDrawer(false)}
-                onOpen={() => toggleDrawer(true)}
-            >
-                <div className='drawer-content'>
-                    <ScrollTo>
-                        {({ scroll }) => (
-                            <>
+                        <SwipeableDrawer
+                            classes={{ paper: classes.paper }}
+                            anchor='left'
+                            open={drawer}
+                            onClose={() => toggleDrawer(false)}
+                            onOpen={() => toggleDrawer(true)}
+                        >
+                            <div className='drawer-content'>
                                 <List component='nav'>
                                     {
                                         SECTIONS.map(section => {
@@ -162,11 +158,11 @@ const Navigation = ({ language, setLanguage }) => {
                                         })
                                     }
                                 </div>
-                            </>
-                        )}
-                    </ScrollTo>
-                </div>
-            </SwipeableDrawer>
+                            </div>
+                        </SwipeableDrawer>
+                    </>
+                )}
+            </ScrollTo>
         </div>
     )
 }

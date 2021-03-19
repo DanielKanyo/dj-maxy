@@ -191,7 +191,7 @@
 }
 
 .arrow-contrainer {
-    height: 100%;
+    height: calc(100% - 52px);
     position: absolute;
     top: 0;
     display: flex;
@@ -364,6 +364,31 @@
     .events .text .description {
         font-size: 16px;
         line-height: 30px;
+    }
 
+    .carousel-item {
+        height: 275px;
+    }
+
+    .arrow-contrainer {
+        margin: 0 10px;
+    }
+
+    .carousel-item .text-container {
+        font-size: 14px;
+    }
+
+    .gallery {
+        padding: 30px;
+    }
+
+    .contact {
+        padding: 50px 30px;
+        height: auto;
+    }
+
+    .contact .contact-text {
+        font-size: 16px;
+        line-height: 30px;
     }
 }

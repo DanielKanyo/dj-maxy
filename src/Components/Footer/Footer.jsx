@@ -14,7 +14,10 @@ const useStyles = makeStyles((theme) => ({
     },
     goToTopBtn: {
         position: 'absolute',
-        right: 40
+        right: 40,
+        [theme.breakpoints.down('sm')]: {
+            display: 'none',
+        },
     }
 }));
 
@@ -66,6 +69,7 @@ const Footer = () => {
                     </IconButton>
                 )}
             </ScrollTo>
+
         </div>
     )
 }

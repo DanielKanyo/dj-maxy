@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import GridList from '@material-ui/core/GridList';
 import GridListTile from '@material-ui/core/GridListTile';
@@ -7,7 +7,6 @@ import { SRLWrapper } from 'simple-react-lightbox';
 
 import { GALLERY_IMAGES } from '../../Static/Constants/constants';
 
-const GALLERY_CELL_HEIGHT = 230;
 const COLS = 3;
 
 const useStyles = makeStyles(() => ({
@@ -34,17 +33,35 @@ const options = {
 
 const Gallery = () => {
     const classes = useStyles();
+    const cellHeight = {
+        desktopVisitor: 230,
+        mobileVisitor: 240
+    };
+
     const { openLightbox } = useLightbox();
+    const [isMobileVisitor, setMobileVisitor] = useState(false);
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+
+        if (window.innerWidth < 600) {
+            setMobileVisitor(true);
+        }
+    }, []);
 
     return (
         <div className='gallery'>
             <div className={classes.container}>
-                <GridList cellHeight={GALLERY_CELL_HEIGHT} className={classes.gridList} cols={COLS}>
+                <GridList
+                    cellHeight={!isMobileVisitor ? cellHeight.desktopVisitor : cellHeight.mobileVisitor}
+                    className={classes.gridList}
+                    cols={COLS}
+                >
                     {
                         GALLERY_IMAGES.map((image, i) => (
                             <GridListTile
                                 key={i}
-                                cols={image.cols || 1}
+                                cols={!isMobileVisitor ? image.cols : 3}
                                 onClick={() => openLightbox(i)}
                             >
                                 <img src={image.src} alt={image.title} className={classes.img} />
