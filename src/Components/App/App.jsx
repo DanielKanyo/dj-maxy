@@ -16,7 +16,7 @@ const App = () => {
 
     return (
         <div>
-            <Navigation language={language} />
+            <Navigation language={language} setLanguage={setLanguage} />
 
             <div className='app'>
                 <div className='wrapper'>

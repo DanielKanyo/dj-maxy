@@ -30,11 +30,11 @@
     color: rgba(255, 255, 255, 0.75);
 }
 
-.sections {
+.nav-buttons {
     display: flex;
 }
 
-.sections a {
+.nav-buttons a {
     text-decoration: none;
 }
 
@@ -42,4 +42,45 @@
     padding-left: 2px;
     color: white;
     opacity: 0.4;
+}
+
+.menu-button-container {
+    display: none;
+}
+
+.drawer-content {
+    width: 275px;
+    background-color: rgba(0, 0, 0, 0.2);
+    height: 100%;
+    color: rgba(255, 255, 255, 0.75);
+    position: relative;
+    padding: 20px 10px;
+}
+
+.language-selector-container-in-menu {
+    position: absolute;
+    bottom: 10px;
+}
+
+.language-selector-container-in-menu button {
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.language-selector-container-in-menu button[active=true] {
+    color: #ff626f;
+}
+
+@media screen and (max-width: 1200px) {
+    .navigation {
+        padding: 0 20px 0 20px;
+        width: calc(100% - 40px);
+    }
+
+    .navigation .nav-buttons {
+        display: none;
+    }
+
+    .navigation .menu-button-container {
+        display: block;
+    }
 }
