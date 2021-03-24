@@ -315,7 +315,7 @@
     .maxi-photo {
         left: calc(50% - 200px);
         width: 400px;
-        height: 600px;
+        height: 560px;
         z-index: 0;
     }
 
