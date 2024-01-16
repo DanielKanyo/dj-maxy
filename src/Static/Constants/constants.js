@@ -7,6 +7,7 @@ import img6 from '../Images/18-LED-3W-PAR.png';
 import img7 from '../Images/American-DJ-deck-stand.png';
 import img8 from '../Images/Mozgofejes-LED.png';
 import img9 from '../Images/INVISION-COMPACT-FOG-1500-FOG-Machine.png';
+import img10 from '../Images/Hurricane_Bubble_Haze_X2_Q6-RIGHT.png';
 
 export const SECTIONS = [
     {
@@ -106,6 +107,10 @@ export const CAROUSEL_DATA = [
     {
         src: img9,
         txt: 'INVISION COMPACT FOG 1500'
+    },
+    {
+        src: img10,
+        txt: 'Hurricane Bubble Haze X2 Q6 - 1 db'
     }
 ];
 
